@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leifrolimited - Premium industrial printing & embroidery supplies in Lagos, Nigeria. Direct supplier of Mimage, Yinghe machines, spare parts & technical support.">
+    <meta name="keywords" content="industrial printing, embroidery machines, large format printer, Mimage, Yinghe, Lagos Nigeria, printing supplies">
+    <meta name="author" content="Leifrolimited">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Leifrolimited | Industrial Printing & Embroidery Supplies">
+    <meta property="og:description" content="Premium industrial printing machinery delivered across Nigeria. Quality you can trust, support you can rely on.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://leifrolimited.com">
+    <meta name="theme-color" content="#1B365D">
     <title>Leifrolimited | Industrial Printing & Embroidery Supplies Lagos</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -51,6 +60,15 @@
         .overlay.show { 
             display: block; 
         }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -94,7 +112,7 @@
         <div class="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
             <div class="flex items-center gap-4">
                 <button class="lg:hidden text-2xl"><i class="fa fa-bars"></i></button>
-                <h1 class="text-2xl font-black text-brand-blue tracking-tighter leading-none">LEIFRO<span class="text-brand-gold">LIMITED</span></h1>
+                <a href="index.html" class="text-2xl font-black text-brand-blue tracking-tighter leading-none hover:text-brand-gold transition">LEIFRO<span class="text-brand-gold">LIMITED</span></a>
             </div>
 
             <div class="hidden lg:flex flex-grow max-w-2xl border-2 border-brand-blue rounded-md overflow-hidden bg-gray-50">
@@ -103,6 +121,9 @@
             </div>
 
             <div class="flex items-center gap-6">
+                <a href="pages/about.html" class="hidden md:block text-sm font-bold text-brand-blue hover:text-brand-gold transition">About</a>
+                <a href="pages/products.html" class="hidden md:block text-sm font-bold text-brand-blue hover:text-brand-gold transition">Products</a>
+                <a href="pages/blog.html" class="hidden md:block text-sm font-bold text-brand-blue hover:text-brand-gold transition">Blog</a>
                 <div onclick="toggleCart()" class="flex flex-col items-center cursor-pointer text-brand-blue relative group">
                     <i class="fas fa-file-alt text-2xl group-hover:text-brand-gold transition"></i>
                     <span id="cart-count" class="absolute -top-2 -right-2 bg-brand-gold text-white text-[10px] rounded-full w-5 h-5 flex items-center justify-center font-black shadow-md border-2 border-white">0</span>
@@ -132,7 +153,7 @@
         <div class="absolute inset-0 bg-gradient-to-r from-brand-blue/95 to-brand-blue/70"></div>
         <div class="absolute inset-0 flex items-center">
             <div class="container mx-auto px-6 relative z-10">
-                <h2 class="text-4xl md:text-7xl font-black text-white mb-4 uppercase leading-none">Your Direct<br><span class="text-brand-gold">Machine Partner</span></h2>
+                <h1 class="text-4xl md:text-7xl font-black text-white mb-4 uppercase leading-none">Your Direct<br><span class="text-brand-gold">Machine Partner</span></h1>
                 <p class="text-gray-100 text-lg md:text-xl mb-8 max-w-xl font-medium">Premium industrial printing & embroidery technology delivered across Nigeria. Quality you can trust, support you can rely on.</p>
                 <div class="flex gap-4">
                     <a href="#products" class="bg-brand-gold text-white px-10 py-4 rounded font-black text-sm uppercase tracking-widest hover:bg-opacity-90 transition-all shadow-xl">Browse Catalog</a>
@@ -150,28 +171,28 @@
                     <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h4 class="font-bold text-brand-blue mb-2">Quality Assured</h4>
+                    <h3 class="font-bold text-brand-blue mb-2">Quality Assured</h3>
                     <p class="text-sm text-gray-600">1-Year Limited Warranty on all machinery</p>
                 </div>
                 <div class="text-center">
                     <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-headset"></i>
                     </div>
-                    <h4 class="font-bold text-brand-blue mb-2">Expert Support</h4>
+                    <h3 class="font-bold text-brand-blue mb-2">Expert Support</h3>
                     <p class="text-sm text-gray-600">Professional technical training included</p>
                 </div>
                 <div class="text-center">
                     <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-truck"></i>
                     </div>
-                    <h4 class="font-bold text-brand-blue mb-2">Safe Delivery</h4>
+                    <h3 class="font-bold text-brand-blue mb-2">Safe Delivery</h3>
                     <p class="text-sm text-gray-600">Professional packing & nationwide shipping</p>
                 </div>
                 <div class="text-center">
                     <div class="bg-brand-blue text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
                         <i class="fas fa-hammer"></i>
                     </div>
-                    <h4 class="font-bold text-brand-blue mb-2">Spare Parts</h4>
+                    <h3 class="font-bold text-brand-blue mb-2">Spare Parts</h3>
                     <p class="text-sm text-gray-600">Full inventory of genuine parts available</p>
                 </div>
             </div>
@@ -182,22 +203,21 @@
     <section id="products" class="container mx-auto px-4 py-20">
         <div class="flex justify-between items-end mb-12 border-b-4 border-gray-100 pb-6">
             <div>
-                <h3 class="text-3xl font-black text-brand-blue uppercase tracking-tighter">Featured Equipment</h3>
+                <h2 class="text-3xl font-black text-brand-blue uppercase tracking-tighter">Featured Equipment</h2>
                 <div class="h-1.5 w-24 bg-brand-gold mt-2"></div>
             </div>
+            <a href="pages/products.html" class="text-brand-gold font-bold hover:underline">View All Products →</a>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            <!-- Product 1 -->
+            <!-- Product 1: MIMAGE PRINTER -->
             <div class="product-card group bg-white border rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
                 <div class="h-72 overflow-hidden bg-gray-100 relative">
-                    <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-gray-100">
-                        <i class="fas fa-print text-8xl text-brand-blue opacity-20"></i>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop" alt="Mimage Large Format Printer" class="w-full h-full object-cover">
                     <div class="absolute top-4 left-4 bg-brand-blue text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">Mimage Series</div>
                 </div>
                 <div class="p-6">
-                    <h4 class="font-black text-xl mb-2 text-brand-blue uppercase leading-tight">Mimage 1.8m High-Speed Large Format Printer</h4>
+                    <h3 class="font-black text-xl mb-2 text-brand-blue uppercase leading-tight">Mimage 1.8m High-Speed Large Format Printer</h3>
                     <p class="text-sm text-gray-500 mb-6 leading-relaxed">Industrial grade Eco-Solvent printer with Epson printheads. High precision for banners and vinyl.</p>
                     <div class="mb-4 text-sm text-gray-600">
                         <p><i class="fas fa-check text-brand-gold mr-2"></i>Print Width: 1.8m</p>
@@ -208,16 +228,14 @@
                 </div>
             </div>
 
-            <!-- Product 2 -->
+            <!-- Product 2: YINGHE EMBROIDERY -->
             <div class="product-card group bg-white border rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
                 <div class="h-72 overflow-hidden bg-gray-100 relative">
-                    <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-gray-100">
-                        <i class="fas fa-tshirt text-8xl text-brand-blue opacity-20"></i>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1578391245055-dfc81c5a91c1?w=500&h=500&fit=crop" alt="Yinghe Embroidery Machine" class="w-full h-full object-cover">
                     <div class="absolute top-4 left-4 bg-brand-blue text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">Yinghe Tech</div>
                 </div>
                 <div class="p-6">
-                    <h4 class="font-black text-xl mb-2 text-brand-blue uppercase leading-tight">Yinghe Multi-Head Computerized Embroidery</h4>
+                    <h3 class="font-black text-xl mb-2 text-brand-blue uppercase leading-tight">Yinghe Multi-Head Computerized Embroidery</h3>
                     <p class="text-sm text-gray-500 mb-6 leading-relaxed">Advanced 12-needle system for high-volume garment production. Perfect for caps and t-shirts.</p>
                     <div class="mb-4 text-sm text-gray-600">
                         <p><i class="fas fa-check text-brand-gold mr-2"></i>12-Needle System</p>
@@ -228,16 +246,14 @@
                 </div>
             </div>
 
-            <!-- Product 3 -->
+            <!-- Product 3: HYDRAULIC GUILLOTINE -->
             <div class="product-card group bg-white border rounded-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
                 <div class="h-72 overflow-hidden bg-gray-100 relative">
-                    <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-gray-100">
-                        <i class="fas fa-cut text-8xl text-brand-blue opacity-20"></i>
-                    </div>
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=500&h=500&fit=crop" alt="Industrial Hydraulic Guillotine Cutter" class="w-full h-full object-cover">
                     <div class="absolute top-4 left-4 bg-brand-blue text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">Post-Press</div>
                 </div>
                 <div class="p-6">
-                    <h4 class="font-black text-xl mb-2 text-brand-blue uppercase leading-tight">Industrial Programmable Hydraulic Guillotine</h4>
+                    <h3 class="font-black text-xl mb-2 text-brand-blue uppercase leading-tight">Industrial Programmable Hydraulic Guillotine</h3>
                     <p class="text-sm text-gray-500 mb-6 leading-relaxed">Precision paper cutting with programmable cutting lengths. Perfect for finishing large format prints.</p>
                     <div class="mb-4 text-sm text-gray-600">
                         <p><i class="fas fa-check text-brand-gold mr-2"></i>Programmable Controls</p>
@@ -253,10 +269,10 @@
     <!-- WHY CHOOSE US -->
     <section id="about" class="bg-brand-blue text-white py-20 px-4">
         <div class="container mx-auto">
-            <h3 class="text-4xl font-black mb-12 text-center uppercase">Why Choose Leifrolimited</h3>
+            <h2 class="text-4xl font-black mb-12 text-center uppercase">Why Choose Leifrolimited</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
-                    <h4 class="text-2xl font-bold mb-4 text-brand-gold">Experience & Expertise</h4>
+                    <h3 class="text-2xl font-bold mb-4 text-brand-gold">Experience & Expertise</h3>
                     <p class="leading-relaxed text-gray-100 mb-6">With years of experience in industrial printing solutions, we understand the unique needs of Lagos-based businesses. Our team is dedicated to providing premium machinery and exceptional customer support.</p>
                     <ul class="space-y-3 text-gray-100">
                         <li><i class="fas fa-check text-brand-gold mr-3"></i>Direct supplier partnerships with global brands</li>
@@ -265,7 +281,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-2xl font-bold mb-4 text-brand-gold">Complete Solutions</h4>
+                    <h3 class="text-2xl font-bold mb-4 text-brand-gold">Complete Solutions</h3>
                     <p class="leading-relaxed text-gray-100 mb-6">From large format printers to embroidery machines and spare parts, we provide everything you need for your printing business under one roof.</p>
                     <ul class="space-y-3 text-gray-100">
                         <li><i class="fas fa-check text-brand-gold mr-3"></i>Full range of industrial printing equipment</li>
@@ -311,18 +327,18 @@
     <!-- CONTACT SECTION -->
     <section id="contact" class="bg-gray-50 py-20 px-4">
         <div class="container mx-auto max-w-4xl">
-            <h3 class="text-3xl font-black text-brand-blue uppercase mb-12 text-center">Get in Touch</h3>
+            <h2 class="text-3xl font-black text-brand-blue uppercase mb-12 text-center">Get in Touch</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- Contact Info -->
                 <div>
-                    <h4 class="text-xl font-bold text-brand-blue mb-6">Contact Information</h4>
+                    <h3 class="text-xl font-bold text-brand-blue mb-6">Contact Information</h3>
                     
                     <div class="space-y-6">
                         <div class="flex gap-4 items-start">
                             <div class="text-2xl text-brand-gold"><i class="fas fa-map-marker-alt"></i></div>
                             <div>
-                                <h5 class="font-bold text-brand-blue">Location</h5>
+                                <h4 class="font-bold text-brand-blue">Location</h4>
                                 <p class="text-gray-600">250, Prestige Plaza, Iju Ishaga Bus Stop, Lagos State, Nigeria</p>
                             </div>
                         </div>
@@ -330,7 +346,7 @@
                         <div class="flex gap-4 items-start">
                             <div class="text-2xl text-brand-gold"><i class="fas fa-phone-alt"></i></div>
                             <div>
-                                <h5 class="font-bold text-brand-blue">Phone</h5>
+                                <h4 class="font-bold text-brand-blue">Phone</h4>
                                 <p class="text-gray-600"><a href="tel:08035148710" class="hover:text-brand-gold">08035148710</a></p>
                             </div>
                         </div>
@@ -338,7 +354,7 @@
                         <div class="flex gap-4 items-start">
                             <div class="text-2xl text-brand-gold"><i class="fas fa-envelope"></i></div>
                             <div>
-                                <h5 class="font-bold text-brand-blue">Email</h5>
+                                <h4 class="font-bold text-brand-blue">Email</h4>
                                 <p class="text-gray-600"><a href="mailto:leifrolimited@gmail.com" class="hover:text-brand-gold">leifrolimited@gmail.com</a></p>
                             </div>
                         </div>
@@ -346,7 +362,7 @@
                         <div class="flex gap-4 items-start">
                             <div class="text-2xl text-brand-gold"><i class="fas fa-clock"></i></div>
                             <div>
-                                <h5 class="font-bold text-brand-blue">Business Hours</h5>
+                                <h4 class="font-bold text-brand-blue">Business Hours</h4>
                                 <p class="text-gray-600">Monday - Saturday: 8:00 AM - 6:00 PM</p>
                                 <p class="text-gray-600">Sunday: Closed</p>
                             </div>
@@ -365,19 +381,23 @@
                 
                 <!-- Quick Contact Form -->
                 <div>
-                    <h4 class="text-xl font-bold text-brand-blue mb-6">Quick Inquiry</h4>
+                    <h3 class="text-xl font-bold text-brand-blue mb-6">Quick Inquiry</h3>
                     <form id="contactForm" class="space-y-4">
                         <div>
-                            <label class="block text-sm font-bold text-gray-700 mb-2">Your Name</label>
-                            <input type="text" class="w-full border-2 border-gray-300 rounded px-4 py-2 focus:border-brand-blue outline-none" placeholder="Your name" required>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Your Name *</label>
+                            <input type="text" name="name" class="w-full border-2 border-gray-300 rounded px-4 py-2 focus:border-brand-blue outline-none" placeholder="Your name" required>
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
-                            <input type="email" class="w-full border-2 border-gray-300 rounded px-4 py-2 focus:border-brand-blue outline-none" placeholder="your@email.com" required>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" name="email" class="w-full border-2 border-gray-300 rounded px-4 py-2 focus:border-brand-blue outline-none" placeholder="your@email.com" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" name="phone" class="w-full border-2 border-gray-300 rounded px-4 py-2 focus:border-brand-blue outline-none" placeholder="08012345678">
                         </div>
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-2">Product Interest</label>
-                            <select class="w-full border-2 border-gray-300 rounded px-4 py-2 focus:border-brand-blue outline-none">
+                            <select name="product" class="w-full border-2 border-gray-300 rounded px-4 py-2 focus:border-brand-blue outline-none">
                                 <option>Select a product category</option>
                                 <option>Large Format Printers</option>
                                 <option>Embroidery Machines</option>
@@ -387,10 +407,15 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-gray-700 mb-2">Message</label>
-                            <textarea class="w-full border-2 border-gray-300 rounded px-4 py-2 focus:border-brand-blue outline-none" rows="4" placeholder="Tell us about your inquiry..." required></textarea>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Message *</label>
+                            <textarea name="message" class="w-full border-2 border-gray-300 rounded px-4 py-2 focus:border-brand-blue outline-none" rows="4" placeholder="Tell us about your inquiry..." required></textarea>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <input type="checkbox" name="subscribe" id="subscribe" class="w-4 h-4">
+                            <label for="subscribe" class="text-sm text-gray-600">Subscribe to our newsletter for updates</label>
                         </div>
                         <button type="submit" class="w-full bg-brand-blue hover:bg-opacity-90 text-white py-3 rounded-lg font-bold uppercase transition">Send Inquiry</button>
+                        <p class="text-xs text-gray-500">We'll respond within 24 hours via email or WhatsApp</p>
                     </form>
                 </div>
             </div>
@@ -421,12 +446,12 @@
             </div>
         </div>
         <div class="text-center pt-8 text-xs uppercase tracking-widest container mx-auto px-4">
-            &copy; 2024 Leifrolimited. All Rights Reserved. | <a href="#" class="hover:text-brand-gold">Privacy Policy</a> | <a href="#" class="hover:text-brand-gold">Terms & Conditions</a>
+            &copy; 2024 Leifrolimited. All Rights Reserved. | <a href="pages/privacy.html" class="hover:text-brand-gold">Privacy Policy</a> | <a href="pages/terms.html" class="hover:text-brand-gold">Terms & Conditions</a>
         </div>
     </footer>
 
     <!-- WHATSAPP FLOATING BUTTON -->
-    <a href="https://wa.me/2348035148710?text=Hello%20Leifrolimited!%20I%20am%20interested%20in%20your%20products.%20Please%20provide%20more%20information." target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 hover:bg-green-600 transition z-50">
+    <a href="https://wa.me/2348035148710?text=Hello%20Leifrolimited!%20I%20am%20interested%20in%20your%20products.%20Please%20provide%20more%20information." target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 hover:bg-green-600 transition z-50" title="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp text-4xl"></i>
     </a>
 
@@ -493,7 +518,7 @@
         }
 
         // Handle contact form submission
-        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const formData = new FormData(this);
             const name = formData.get('name') || 'Customer';
@@ -501,6 +526,15 @@
             window.open(`https://wa.me/2348035148710?text=${message}`, '_blank');
             this.reset();
             alert('Your inquiry has been sent! We will contact you shortly.');
+        });
+
+        // Track page views for analytics
+        window.addEventListener('load', function() {
+            if (typeof gtag !== 'undefined') {
+                gtag('config', 'GA_MEASUREMENT_ID', {
+                    'page_path': window.location.pathname
+                });
+            }
         });
     </script>
 
